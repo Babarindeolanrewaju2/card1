@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
+    <style>
+        
+@font-face {
+            font-family: "Proxima-Nova-Light";
+            src: url("C:/Users/Olanr/Downloads/FONTS/Proxima_Nova/Proxima Nova Reg.otf");
+        }
+
+                /* @font-face {
+            font-family: "Proxima-Nova-Light";
+            src: url("C:/Users/Olanr/Downloads/FONTS/Gotham_Font_Superfamily/Gotham Font Superfamily/Gotham/Gotham-Book.otf");
+        } */
+
+        * {
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    font-family: "Proxima-Nova-Light";
+    box-sizing: border-box;
+        }
+
+        .section-white {
+    background: #fff;
+    padding: 90px 0 70px 0;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px !important;
+}
+
+h2.section-title {
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 38px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Proxima-Nova-Light', serif;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #071e55;
+    font-weight: 600;
+}
+
+p.section-subtitle {
+    font-size: 18px;
+}
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #7c8595;
+    margin-bottom: 20px;
+    font-family: 'Proxima-Nova-Light', sans-serif;
+}
+
+.services-wrapper {
+    position: relative;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+@media (min-width: 768px){
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+}
+
+.main-services {
+    position: relative;
+    margin: 10px 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 1s;
+}
+
+.main-services.green i {
+    color: #27b36a;
+    border: 2px dashed #27b36a;
+}
+.main-services i {
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 42px;
+    line-height: 90px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.far {
+    font-weight: 400;
+}
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.main-services.green i {
+    color: #27b36a;
+    border: 2px dashed #27b36a;
+}
+.main-services i {
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 42px;
+    line-height: 90px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+
+.main-services.red i {
+    color: #ff0000;
+    border: 2px dashed #ff0000;
+}
+
+.far {
+    font-weight: 400;
+}
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.main-services.yellow i {
+    color: #fdcc28;
+    border: 2px dashed #fdcc28;
+}
+
+
+@media (min-width: 576px) {
+.container {
+    max-width: 540px;
+}
+}
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+}}
+@media screen and (min-width: 992px) {
+.container {
+    max-width: 960px;
+}
+}
+
+@media screen and ( max-width: 1140px;) {
+.container {
+    max-width: 1140px;
+}
+}
+
+.main-services h4 {
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.main-services:hover {
+    transform: scale(1.025);
+    transition: all 1s;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.col-md-12{
+margin-left: auto;
+margin-right:auto;
+}
+
+    </style>
+</head>
+<body>
+    <section class="section-white" id="about">
+
+        <!--begin container -->
+        <div class="container">
+
+            <!--begin row -->
+            <div class="row">
+
+                <!--begin col-md-12 -->
+                <div class="col-md-12 text-center margin-bottom-10">
+
+                    <h2 class="section-title">What We Do</h2>
+
+                    <p class="section-subtitle">Dicover how our amazing team can help your business.</p>
+                    
+                </div>
+                <!--end col-md-12 -->
+
+            </div>
+            <!--end row -->
+
+        </div>
+        <!--end container -->
+
+        <!--begin services-wrapper -->
+        <div class="services-wrapper">
+
+            <!--begin container -->
+            <div class="container">
+
+                <!--begin row -->
+                <div class="row">
+
+                    <!--begin col-md-4 -->
+                    <div class="col-md-4">
+
+                        <div class="main-services green">
+
+                            <i class="fas fa-chart-bar"></i>
+
+                            <h4>Google Analitycs</h4>
+
+                            <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
+                            
+                        </div>
+
+                    </div>
+                    <!--end col-md-4 -->
+
+                    <!--begin col-md-4 -->
+                    <div class="col-md-4">
+
+                        <div class="main-services red">
+
+                            <i class="fas fa-heart"></i>
+
+                            <h4>Brand Awareness</h4>
+
+                            <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
+                            
+                        </div>
+
+                    </div>
+                    <!--end col-md-4 -->
+
+                    <!--begin col-md-4 -->
+                    <div class="col-md-4">
+
+                        <div class="main-services yellow">
+
+                            <i class="fas fa-anchor"></i>
+
+                            <h4>Graphic Design</h4>
+
+                            <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
+                            
+                        </div>
+
+                    </div>
+                    <!--end col-md-4 -->
+               
+                </div>
+                <!--end row -->
+                
+            </div>
+            <!--end container -->
+
+        </div>
+        <!--end services-wrapper -->
+
+    </section>
+</body>
+</html>
